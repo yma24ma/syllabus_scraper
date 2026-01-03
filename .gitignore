@@ -1,0 +1,11 @@
+# Datasets
+*.pdf
+*.csv
+
+# Environments
+.env
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.DS_Store

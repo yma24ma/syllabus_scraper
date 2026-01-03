@@ -1,0 +1,120 @@
+# Product Requirements Document (PRD): Syllabus Scraper
+
+### 1. Product Overview
+
+Product Name: Syllabus Scraper (Working Title)
+
+Concept: An automated tool that parses unstructured PDF course syllabi, extracts key deadlines and grade weightings, and exports them into structured formats (Google Calendar, Notion, CSV).
+
+Target Audience: University students (starting with UBC Economics/CS students) who manage 4-5 courses per semester and struggle with manual deadline tracking.
+
+Value Proposition: "Stop manually copying dates. Turn your 10-page syllabus into a schedule in 10 seconds."
+
+---
+
+### 2. User Stories & Core Features
+
+### Core Features (MVP)
+
+- **PDF Upload:** User can drag and drop a PDF file.
+- **Intelligent Parsing:** System identifies:
+    - **Event Name:** (e.g., "Midterm 1", "Problem Set 3")
+    - **Date & Time:** (e.g., "Oct 15", "11:59 PM")
+    - **Weighting:** (e.g., "20%", "150 points")
+- **Conflict Detection:** Highlights if a parsed date conflicts with an existing entry (requires calendar integration) or if multiple assignments fall on the same day.
+- **Export Options:**
+    - `.ics` file (Standard Calendar format for Apple/Google/Outlook).
+    - Copy-pasteable table for Notion/Excel.
+
+### User Flow
+
+1. **Landing:** User lands on a clean, minimal homepage.
+2. **Upload:** User uploads `ECON_302_Syllabus.pdf`.
+3. **Review:** System displays a "Review" table: "I found 5 dates. Please confirm they are correct."
+    - *Why this is crucial:* NLP is rarely 100% perfect. The "Human-in-the-loop" review builds trust.
+4. **Export:** User clicks "Add to Google Calendar" or "Download .ics".
+
+---
+
+### 3. Technical Architecture
+
+### Front-End
+
+- **Framework:** **Streamlit** (for fastest MVP) or **React + Tailwind CSS** (for a polished B2C product).
+- **Interface:** Minimalist. Focus on drag-and-drop functionality.
+
+### Back-End (The "Brain")
+
+- **Language:** Python.
+- **PDF Text Extraction:** `pdfplumber` or `PyMuPDF` (Fitz). These libraries preserve the physical layout of the text, which is vital for syllabi (e.g., reading tables).
+- **NLP / Extraction Logic:**
+    - **Regex (Level 1):** Use Regular Expressions to find date patterns (`\d{1,2}/\d{1,2}`, `Sept \d{1,2}`, etc.).
+    - **LLM Integration (Level 2 - Recommended):** Send the raw text to the **OpenAI API (gpt-4o-mini)** or a lightweight local model.
+    - *Prompt Engineering:* "Extract all assignments, exams, and their due dates and weights from the following text. Return JSON format."
+
+### Data Structure (JSON Output Example)
+
+```json
+{
+  "course_code": "ECON 302",
+  "events": [
+    {
+      "title": "Midterm Exam",
+      "date": "2026-02-14",
+      "time": "14:00",
+      "weight": 0.25,
+      "type": "Exam"
+    },
+    {
+      "title": "Problem Set 1",
+      "date": "2026-01-20",
+      "time": "23:59",
+      "weight": 0.05,
+      "type": "Assignment"
+    }
+  ]
+}
+```
+
+JSON
+
+---
+
+### 4. Economic & Data Science Differentiation
+
+Since you want to leverage your background, here is how you make this "smarter" than a basic script:
+
+**A. The "Grade Value" Calculation (Economics Angle)**
+
+- **Feature:** Calculate the "Opportunity Cost" of missing an assignment.
+- **Logic:** If "Assignment 1" is worth 2% and "Midterm" is worth 40%, but they are due on the same day, the UI visually highlights the Midterm as "High Leverage."
+- **Formula:** $Leverage Score = \frac{Weight(\%)}{Estimated Effort (hrs)}$.
+
+**B. Workload Distribution (Data Viz)**
+
+- **Feature:** A simple histogram showing "Pressure Points" in the semester.
+- **Visualization:** A bar chart where the X-axis is the week number and the Y-axis is the total % of grade due that week.
+- **Insight:** "Warning: Week 8 accounts for 35% of your total semester grade."
+
+---
+
+### 5. Roadmap & Next Steps
+
+**Phase 1: The "Hacker" Version (1-2 Weeks)**
+
+- Build a Python script that runs locally.
+- Input: A folder of PDFs.
+- Output: A CSV file with dates.
+- *Goal: Verify if GPT-4/Regex can actually read messy syllabus formats.*
+
+**Phase 2: The "Wrapper" (2-3 Weeks)**
+
+- Wrap the script in a simple Streamlit app.
+- Deploy on Streamlit Cloud (Free).
+- Share with 5 friends at UBC.
+
+**Phase 3: The "Product" (1 Month)**
+
+- Add Google Calendar API integration (OAuth).
+- Add the "Workload Distribution" charts.
+- Purchase a domain (e.g., `syllabuddy.com`).

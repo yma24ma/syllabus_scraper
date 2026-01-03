@@ -1,0 +1,655 @@
+Syllabus - ECON 398
+Spring 2026 (2025W2)
+Jonathan Graves
+2026-01-02
+Table of contents
+Key Details . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+What is this course about? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+What are you going to learn? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+What do I need to know before I start? . . . . . . . . . . . . . . . . . . . . . . . . . 4
+How are you going to learn in this class? . . . . . . . . . . . . . . . . . . . . . . . . . 5
+What do I need to buy for this course? . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+Textbooks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+Hardware and Software . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+How will I be assessed in this course?. . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Assessment-specific Policies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Course Policies 11
+What general policies govern this course? . . . . . . . . . . . . . . . . . . . . . . . . 11
+VSE-Specific Policies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+Policy on Sharing Course Materials . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Policy on Academic Honesty . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+￿ Policy on the use of AI learning tools ￿ . . . . . . . . . . . . . . . . . . . . . . 13
+Policy on Academic Concessions . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+My Policies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Respect and Academic Integrity . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Missing classes or exams . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+How to Contact Me . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+Piazza . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+OCELIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+UBC Early Alert . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+Academic Accommodation for Students with Disabilities . . . . . . . . . . . . . 18
+Conflicting Responsibilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Copyright Notice . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Appendices 20
+Project . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Assessment-level Learning Outcomes . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+2
+Key Details
+• Instructor: Dr Jonathan L. Graves (Associate Professor of Teaching, VSE)
+• Oﬀice: IONA 104 or via Zoom
+• Oﬀice Hours: Mon/Wed 2:00 PM - 3:00 PM, or by appointment
+• Email: jonathan.graves@ubc.ca
+• Course Schedule:
+– Lecture: Mon/Wed 3:30 PM - 5:00 PM @ BUCH A203
+– Labs: Vary, check your schedule
+What is this course about?
+This course is designed to help you apply economics to the real world, through the “lens” of
+what economists call causal modeling. The motivation for this approach is that in order to
+understand the real world, we need to understand cause and effect. This principle
+bridges the gap between the theoretical and practical aspects of economics, focusing on how
+we can use econometrics and statistics to answer questions and evaluate economic models.
+While the intermediate econometrics sequence (ECON 325, 326) focuses on the theoretical
+and statistical properties of techniques and tools used in economics, this course focuses on the
+proper application of these tools in a practical setting, with a view to helping you perform
+your own, independent, research in courses like ECON 490 or 494.
+In order to do this, we will focus on the problem of causal modeling: how do we answer
+a question like “does A cause B”? This allows us to understand the relationships between
+different econometric and statistical methods, and unpack the assumptions which are required
+to interpret statistical findings economically. You will also learn a variety of novel methods
+usedineconometricstoaddresscommonpitfallsassociatedwithstandardmethods,focusingon
+the conditions and situations under which they are still useful to answer economic questions.
+On the practical side, the conceptual side of the course is supplemented with extensive lab
+time – both in the classroom and as part of a scheduled lab. Methods and illustrations are
+connected to practical examples of how the concepts or problems manifest in real-world or
+simulated data. You will have a chance to practice using statistical software, with the goal
+of becoming comfortable enough to explore methods independently based on your own ideas
+and experience. This is assessed through a series of assignments and lab quizzes, which will
+give you feedback on your progress mastering both the practical tools and applying them to
+developing a research project.
+Thecourseculminatesinafinalresearchreportandandexamwhichallowsyoutodemonstrate
+whatyouhavelearnedandgetsomeofyourfirstexperiencewritingaresearchprojectinwhich
+you get to make decisions about the research direction. This serves as an excellent preparation
+to capstone courses like ECON 490 or 494.
+3
+What are you going to learn?
+The goal of this course is to help you become proficient in both applied and conceptual skills
+related to applied economics. We’re less interested in building knowledge (although we will!)
+and more interested in building familiarity with methods. These can be in terms of how
+we think (conceptual, labelled with a C) or what we do (applied, labelled with an A). After
+completing this course, you will be able to:
+• Learning Outcome C1: understand causal methods and causality in economics and their
+application to the real world
+• Learning Outcome C2: analyze empirical methods and their real-world applications in
+the context of the causal framework, with particular reference to bias
+• Learning Outcome C3: interpret common econometric tools (such as linear regression)
+in the context of causal models, and assess their pros and cons in answering questions
+from a causal point of view.
+• Learning Outcome C4: evaluate the connection between a theoretical economic model
+and an empirical model, with reference to the causal nature of the questions both pose.
+• Learning Outcome A1: understand the structure of economic data and how it can be
+used to answer a properly formulated research question from a causal point of view
+• Learning Outcome A2: employ an empirical method in order to answer a research ques-
+tion from a causal point of view
+• Learning Outcome A3: evaluate and communicate the results of an empirical analysis in
+the context of a research question, with reference to causality
+These might still be too complicated (after all, what the heck is a “causal model”); if you
+want more detail, each of these outcomes is also divided into more basic outcomes, described
+in Section , which are linked to the assessment and (estimated) weekly coverage of the course,
+as outlined in the rest of the syllabus.
+• MorebasicoutcomesarewrittenlikeC1.1; thisisbasicoutcome#1forLearningoutcome
+C1; references in the remainder of this syllabus follow this convention.
+What do I need to know before I start?
+• You will need to be familiar with introductory micro and macroeconomics (i.e., ECON
+101 and 102 at UBC).
+• Whilemathisnotafocusonthiscourse, youwillneedtobefamiliarwithbasicstatistics,
+especially expectations, populations, and averages. The most important concept in this
+course is the conditional expectation.
+– We will review this in the first week, but you should review this on your own if you
+are not very strong with statistical analysis
+4
+• You also need to be familiar with math. This is mainly things like how to solve an
+algebraic equation, simplify an expression, graph a function, or find the equation of a
+line. There is no calculus required, but it can help.
+• There are also no requirement to know programming or coding, but you should have
+basic computer literacy (e.g. create a folder, move a file, rename a file).
+How are you going to learn in this class?
+We are going to use a combination of lectures and “hands-on” sessions for a total of about
+five (4-5) formal class hours per week (including labs). For most weeks, 1.5 or 2 hours will
+be spent in a traditional lecture format, and 1.5 or 1 hours will be devoted in “hands-on”
+work applying ideas and techniques covered in lecture. This will be supplemented with one to
+two (2) hours of lab time, where students will go in-depth using statistical tools or practicing
+problem-solving.
+• This time will also be used in some weeks to allow students to work on assignments with
+a TA present for assistance (rather than completing them outside of class hours).
+I don’t believe in strict schedules for this course, but I do have an outline of the different
+modules for this course, and the (approximate) dates (see Table 1.)
+• The midterm will be around week 6 or 7; after we finish most of the regression module.
+I will announce a more specific date later in the similar
+Table 1: Rough schedule
+Lecture Topic Applied Topics Assessments
+Module 1 Introduction (2/1) No labs Introductory
+materials
+Causality and potential outcomes Into to R
+(2/1)
+Module 2 Experiments I (2/1) Intro to Data
+Experiments II (1.5/1.5) Descriptive Assignment 1
+Stats
+Module 3 Regression I (2/1) Regressions
+Regression II (2/1) More regressions Assignment 2
+Module 4 Difference-in-differences I (2/1) No labs Midterm (approx.)
+Difference-in-differences II DD Models Assignment 3
+Module 5 Instrumental Variables I IV Models
+Instrumental Variables II Paper Prep Assignment 4
+Module 6 Advanced Topics I Results
+Advanced Topics II Results Assignment 5
+5
+Lecture Topic Applied Topics Assessments
+Post- Report + Final
+Class
+What do I need to buy for this course?
+You may not need to buy anything for this course.
+Textbooks
+Themain“text”forthisclassismypartiallyfinishedIntroductionto Causal Methodstextbook,
+which is free on the Canvas website.
+There are also two optional textbooks:
+• (MHE) Angrist, J.D., & Pischke, J-S. Mostly Harmless Econometrics (2012)
+– PDF version is free online (legally!); ~$60 paperback
+•(MM) Angrist, J.D., & Pischke, J-S. Mastering ’Metrics. Princeton university press, 2014.
+– This book is not free. It can be found online or in the UBC bookstore, and costs
+about $35.
+Hardware and Software
+• You will need a laptop or tablet which can run an internet browser. If you do not have
+one, they can borrowed from the Library or from UBC Arts ISIT on an as-needed basis.
+Please let me know if you have any problems with this requirement.
+• In this course, we will be using the statistical programming language R. There are
+several different ways to use R – the simplest is via a web-browser. However, students
+withmayalsowishtoinstallalocalversionontheircomputer. Youcanfindinstructions
+for how to do this on Canvas. All of these software systems are free.
+6
+How will I be assessed in this course?
+This year, I am trying something new with the grading for this course. Basically, this course
+has two main parts:
+• Examinations, which test your understanding of the concepts and theories taught in
+course.
+• Applications, in which you get to practice applying the concepts in the context of assign-
+ments and a final project.
+Since these two parts of the course are really quite different from one another, I am using a
+technique called specifications grading to help you understand how you are doing in each
+part of the course. Your final grade in the course will be based on:
+1. 30% from your performance in the specifications table, below.
+2. 70% from your exams (a midterm and a final). The final is worth 50%, and the midterm
+20%, but if you do better on the final than the midterm, the final will count for 70% and
+the midterm 0%.
+In the table, your grade is determined by the lowest row where you meet all the requirements.
+You can see a description of each requirement below. To get a specific value in each range,
+I use your final exam grade to select a value from the range. For example, if you meet the
+requirementsforanA,andyourfinalexamgradeisan85,yourfinalgradeforthespecifications
+part will be 80+0.85×(89−80).
+Table 2: Specifications Grading Table
+Grade Assignments (E/P) Project Participation Applied Exam
+A+ (90-100) 3/2 A 100% Pass
+A (80-89) 2/3 B 90% Pass
+B (70-79) 2/2 C 50% Pass
+C (60-69) 0/4 Pass 50% Pass
+D (50-59) 0/2 Pass 50% Pass
+Assessment-specific Policies
+Assignments
+There will be 4-5 assignments (approximately 1 per unit).
+• We grade each assignment on a 5-point scale. The grading rubric is explained on Canvas.
+– A 3 or better is considered “passing” for an assignment. (P).
+7
+– A 4 or better is considered “excellent” for an assignment. (E).
+• You get 1 chance to resubmit each assignment after reviewing the solutions.
+Participation
+This is all the random stuff we do that just makes the class work. It’s all graded pass/fail, so
+the goal is just to complete them.
+Project
+See Section for details on how the project is graded.
+Curving and Target Grades
+The VSE has the following policy for 3nd year courses:
+(cid:313) Note
+Consistency in grading policies across VSE courses is extremely important: it is essential
+that grades convey useful information, and that students perceive they are being graded
+fairly across all courses. 300-level courses should have averages in the 70-78%% range.
+This course usually does not require any scaling to meet that range, but I reserve the right to
+adjust the final grades to reflect the diﬀiculty of the course and assessments. I may also adjust
+the scores on an assessment to reflect the diﬀiculty of that particular assessment.
+Extra Credit
+Extra credit is not be provided on request, but some assignments will have opportunities for
+extra credit. Additionally, depending on the semester and timing, there may be a few extra
+credit or supplementary opportunities during class.
+Re-Grades
+Anyrequestsforare-gradeofanassignmentorexammustbemadevia the form on Canvas
+within 7 days of when your work is returned.
+8
+• Any re-grade request must be via the form, and include a written description of the
+problem with the grade and why the grade should be different. This helps to make sure
+that grading is fair and consistent, since there is a written, objective, record of the issue.
+I handle all such requests.
+• Inthecasethattheerrorisnottrivial(e.g.thescorewasaddedupincorrectly)theentire
+exam or submission will be re-graded. This is to ensure consistency of grading across
+assignments, not to try to scare you – generally, if the request for a regrade is accurate,
+your mark will increase.
+There are no re-re-grade requests; if your request is denied, case closed.
+Handing in Work
+Several times this semester you will be responsible for handing in work. The deadlines are on
+Canvas.1
+• Late assessments will be penalized at a rate of 2% per hour late, rounded up to the next
+hour.
+– E.g., 10 minutes late would be 2% × (1 hour) = 2% penalty.
+• AssignmentsmustbehandedinonlinebythedatepostedonCanvas. Theycanbeeither
+typed, or written by hand then scanned in or photographed.
+– You must upload a single PDF or DOCX file (not a bunch of JPGs or something
+like that).
+– It is your responsibility to ensure that any file you upload works.
+Late Waivers
+You start this course with two (2) late waivers. You can keep track of your waiver status on
+Canvas by looking at the “Waiver” assignment, which indicates how many waivers you have
+left. You may choose to use these waivers in the following ways:
+• Use 1 waiver: extend the deadline for an assessments which is not (a) an exam or (b)
+time-limited (e.g. must be completed before another assessment) for 48 hours. After
+that point, normal late penalties begin applying.
+1Important note: Canvas is a little sensitive about deadlines – it will say 11:59 PM usually, and it means
+11:59:00 PM. If you submit something at 11:59:36, it will be marked as late – but don’t worry, we won’t
+penalize you during that liminal minute.
+9
+To use waivers, add a comment in the Canvas submission indicating you are claiming the
+waiver when you submit the assessment.
+Note that late waivers do not replace the standard conditions for academic concessions (See
+Section ). For example, if you get sick and cannot submit an assignment, you do not need to
+use your waivers (although you can do that if you don’t want to bother getting an academic
+concession).
+10
+Course Policies
+What general policies govern this course?
+There are a lot of different policies at UBC! In this section, I highlight some of the most
+important ones for students in this class and give details for how to handle certain situations.
+However, all courses at UBC (including this one) are governed by a core set of University
+policies:
+UBC provides resources to support student learning and to maintain healthy
+lifestyles but recognizes that sometimes crises arise and so there are additional
+resources to access including those for survivors of sexual violence. UBC values
+respectforthepersonandideasofallmembersoftheacademiccommunity. Harass-
+ment and discrimination are not tolerated nor is suppression of academic freedom.
+UBC provides appropriate accommodation for students with disabilities and for
+religious and cultural observances. UBC values academic honesty and students are
+expected to acknowledge the ideas generated by others and to uphold the high-
+est academic standards in all of their actions. Details of the policies and how to
+access support are available here (https://senate.ubc.ca/policiesresources-support-
+student-success)
+To be clear: you are bound by all of the policies in the above link, regardless of whether I
+clarify them elsewhere in this document. Give them a read!
+VSE-Specific Policies
+In addition the course averages above, the VSE has a number of specific policies which govern
+all undergraduate courses. These are in this section.
+11
+Policy on Sharing Course Materials
+(cid:190) Don’t Post Them Online
+Please, please, don’t post my notes, slides, assignments, and work online. Or upload
+them to random AI tools.
+All the materials provided to you as part of this course are protected by copyright. All
+assignment instructions, quiz questions and answers, discussion questions, announcements,
+lecture slides, audio/video recordings, Canvas modules, and any other materials provided
+to you by your instructor or in the textbook are for use only by students enrolled in this
+course this term. Sharing any of these materials beyond this course, including by posting on
+file-sharing websites (e.g., CourseHero, Google Docs) is a violation of copyright law and an
+academic offence. Copying and pasting sentences from the lecture notes or the textbook (e.g.,
+definitions) into for-profit software (e.g., Quizlet) is likewise a violation of copyright law, and
+an academic offence. Violations of this policy will be treated according to the provisos of
+the Code of Student Conduct. For further information about copyright law, please refer to
+(https://copyright.ubc.ca/students/).
+Policy on Academic Honesty
+It is the policy of the Vancouver School of Economics to report all violations of UBC’s stan-
+dards for academic integrity to the oﬀice of the Dean of Arts. All violations of academic
+integrity standards will result in a grade of zero on the relevant assessment (exam, paper,
+assignment etc.). Students who do not have a previous offence may have the option to en-
+ter into a diversionary process with the Dean of Arts to resolve their misconduct (https:
+//academicintegrity.ubc.ca/diversionary-process/). Any student who has a previous academic
+offence will be referred to the President’s Advisory Committee on Student Discipline (PACSD)
+(https://universitycounsel.ubc.ca/homepage/guides-and-resources/discipline/). PACSD may
+impose additional penalties including: a transcript notation indicating that the student has
+committed an academic offence, zero in the course, and/or suspension or expulsion from
+the University. You are personally responsible for understanding and following the UBC’s
+policies for academic integrity: https://vancouver.calendar.ubc.ca/campus-wide-policies-and-
+regulations/academic-honesty-and-standards. A Canvas module has been made available you
+for this purpose titled “Avoiding Academic Misconduct”. It is your responsibility to read the
+materials in that module before submitting any work in this course. Speak to your instructor
+if you have any questions regarding the standard for academic integrity at UBC and/or the
+VSE polices on academic misconduct.
+12
+￿ Policy on the use of AI learning tools ￿
+The specific rules for the use of AI tools are at the discretion of the course instructor. Those
+rules might change over the course of the term as new technologies become available. Changes
+tothoserulesmightchangethecontentofassessmentsandthewaythatyourworkisevaluated.
+If no written instructions on the use of AI tools have been provided by the instructor, the use
+of all AI tools is strictly prohibited in the course. Where the written instructions permit the
+use of AI tools, that usage must be documented and attributed within your assessment(s).
+Students are responsible for all factual inaccuracies that are created by the use of AI tools.
+Please speak to your instructor if you have further questions about the ways in which AI
+technology use is permitted in this course.
+AI learning tools include things like:
+• ChatGPT, Github Co-Pilot, Gemini, etc.
+• This also includes some of the functionality of writing-assistant tools like Grammarly.
+For these, you want to be careful. Basically, if it’s writing for you, it’s an AI tool. If it’s
+just providing grammar or spelling suggestions, that’s fine. You can tweak the settings
+to restrict this kind of functionality.
+Using AI Tools on Assessments
+As I said above, this is a really bad idea for the initial submission of the assignments.
+However, if you use them, particularly in your resubmission, you must do the following:
+1. If you have text that was based on output from a model, you should treat it as a
+paraphrase and cite the model in the text.
+2. See Section for a description of how to do this.
+Using AI Tools on the Project
+You may not use AI tools to write text or code for you. You can use AI tools to help you write
+text or code.
+• Basically, you should be thinking through a model’s output and re-writing it as you go;
+just imagine the AI model is like the perfect textbook page you found on just the right
+topic.
+• A good way to do this is to use the model in a separate window from where you write,
+and then never copy-paste.
+• Use the model to help you do it, not do it for you. Think of it like a pair programmer,
+or tutor, not a replacement for you.
+13
+If you do use a model, and you have text that was based on output from a model, you should
+treat it as a paraphrase and cite the model in the text. See Section for a description of how
+to do this.
+• A common question arises when you used it to help debug code; just write a short
+sentence explaining how it was used, and cite a specific instance of use.
+Citing AI Tools
+You should use Chicago-style referencing for AI tools. There are two main ways to cite a
+tool:
+1. For tools that include a link to the prompt and results, you should use use this URL in
+the
+• For instance, on ChatGPT, the link is provided in the “Share”.
+2. For tools that do not include a link you should use the response to query.
+For instance:
+• Image Generated by ChatGPT, OpenAI, May 23, 2205, https://chatgpt.com/share/
+68519b6f-ef3c-8011-9416-cff1f3aaccdf
+• ChatGPT, response to “Explain how to make pizza dough from common household
+ingredients,” OpenAI, March 7, 2023.
+The Golden Rule
+If you’re not sure just ask me.
+Policy on Academic Concessions
+Sometimes, things happen during the course of a semester that can affect your ability to
+succeed. There are three main categories:
+1. Medical – i.e. you got sick and missed class or a chronic illness got worse
+2. Compassionate – i.e. a friend or close relative had something bad happen to them, or
+something bad happened to you.
+3. Conflicting Responsibilities – i.e. something happened in your personal life which is
+affecting your ability to do the work, like childcare falling through
+14
+Youcanreadmoreaboutspecificexamplesandthewholepolicyat: http://www.calendar.ubc.
+ca/vancouver/index.cfm?tree=3,48,0,0
+Inallofthesecases, UBC’spolicyistoallowyoutorequestanacademicconcession. Mypolicy
+is that all requests for academic concession should be handled through your faculty Advising
+oﬀice. This is so that we can centrally track requests for concession and ensure they are fairly
+administered; it also helps protect your privacy. You can find the Arts procedure here:
+https://students.arts.ubc.ca/advising/academic-performance/help-academic-concession/
+If you need a concession, you should immediately speak to Advising, who will follow-up
+withmetohandletheacademicsideofthings. In-termconcessions, whichdealwiththingslike
+missed assignments or deadlines, are handled usually by extending the deadline or adjusting
+the final grading of the course (e.g. omitting an assessment). Alternative forms of assessment
+may also be used if suitable and recommended by Advising.
+You are also welcome to speak to me regarding your issue; I’m here to support you and help
+you get through things and be successful. If you’re not sure if it’s something you should/could
+get a concession for, I can also give you a quick sense of what Advising will likely suggest if
+you’re unable to make an appointment immediately.
+A request for an academic concession needs to be made within a “reasonable time-frame.”
+Since this is ambiguous, I’m defining reasonable as within seven (7) days unless there are
+extenuating circumstances which make meeting such a deadline impossible. If this is the case,
+then a request should be made as soon as practically possible.
+My Policies
+I also have my own take on some of these policies.
+Respect and Academic Integrity
+It is very important that every student be treated with respect and given due courtesy by
+others in the classroom environment. If you feel uncomfortable with the behaviour of another
+person in the classroom, lab, or elsewhere, please bring it to my attention.
+In addition, basic workplace etiquette is required of everyone. Treat this class like you would
+a meeting with your colleagues at a (future) job. This includes:
+• Coming on time, and not disrupting others when unavoidably late.
+• Avoiding texting, playing with your phone, Facebook, email, chatting or other electronic
+distractions.
+15
+• Raising your hand if you have a question or comment, and not interrupting others when
+they are speaking.
+Seriously disrespectful or inappropriate behaviour will not be tolerated, and may result in a
+student being asked to leave the class or even withdraw from the course. All exams and sub-
+missions in this course (including assignments) are governed by the UBC policies on Academic
+Misconduct (http://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,959). Cheat-
+ing and plagiarism will be dealt with by the department and dean, and result in penalties as
+outlined in the calendar (including, but not limited to, failure of the course or submission).
+Academic Misconduct
+The VSE requires that all incidences of suspected misconduct are reviewed by our academic
+integrity oﬀicer; if you think I’m nice, that won’t help you!
+Missing classes or exams
+If you miss a class, it is your responsibility to cover the notes and topics you may have
+missed. Forming a study group is highly recommended.
+Exams will not be rescheduled, and no make-up exams will be given unless required by the
+University Calendar:
+• Since the midterm is (in a sense) optional, missing it for any reason (valid or otherwise)
+will be treated the same, and the exam portion will be fully from the final exam.
+• Ifthefinalismissedforavalidreason6See (supportedbydocumentation)asdetermined
+byUBCAdvising,Iwillwriteafinalforyoutobearrangedatalaterdate,usuallyduring
+the Standing Deferred period.
+– It is your responsibility to apply for the exam and complete it.
+• If the final is missed for non-valid reason, it will be treated as a zero.
+Final exam dates are set by the university and are beyond my control. No alternative
+dates will be provided, so refrain from making travel plans in advance of the dates being
+announced.
+How to Contact Me
+My email jonathan.graves@ubc.ca is the best way to reach me.
+Iloveemailsfrommystudents,butpleaseensuretheyarecoherent, respectfulandappropriate
+to a business setting.
+16
+1. All emails should be prefaced with [Econ 398] in the subject line. Emails that do
+not adhere to this guideline may not reach my inbox, and so you may not receive a reply.
+I get a lot of spam emails, so if you don’t hear from me in a timely fashion (1-2 business
+days), please send a follow-up email.
+2. Include your full name and student number in the body of the email, so I know who you
+are.
+There is a limit to what can be discussed through an email, so longer discussions should be
+taken up in my oﬀice hours. If appropriate, I may also post replies to student questions to
+the entire student body. If, for whatever reason, you do not wish your question to be posted,
+please indicate so in the email.
+Piazza
+To help people discuss questions and centralize communication, I’ve created a course Piazza.
+You can join it by clicking on “Piazza”, in the sidebar to the right. One important thing to
+keep in mind: you need to create an account, and Piazza is not hosted inside Canada. The
+LTHub recommends the following:
+The Piazza tool is stored on servers outside Canada. When you access this site
+by clicking on the link through Canvas, you are being transferred to these servers.
+In order to protect your identity, UBC obfuscates your user ID before it is sent to
+the site. However, Piazza does require you to create an account on their servers.
+While Piazza adheres to strict U.S. privacy regulations (FERPA), UBC cannot
+guarantee security of your private details on servers outside of Canada. Please
+exercise caution whenever using personal information. You may wish to use a
+pseudonym to protect your privacy if you have concerns.
+Participation in Piazza is optional; you don’t have to join or take part if you want, and can
+always email me or your TAs questions as usual - but I will try to be active on Piazza, so I
+encourage you to post your questions there, so other students can benefit from them!
+OCELIA
+We have a fancy new AI tools for help with this course. It’s based on some work people are
+doing at UBC, and is a free implementation of the very good and expensive Claude Sonnet
+4.3 model, fine-tuned on our course materials. Here’s what the team says about it:
+OCELIA is an interactive learning assistant designed to help you connect with our
+course readings. Each module includes a short set of questions that connect you
+with the main ideas and key concepts from that week’s material. Spending about
+17
+15–20 minutes with OCELIA before your Wednesday discussion section will help
+you feel more confident and ready to contribute to class.
+Our class is one of the first to pilot OCELIA, which is being developed through a
+Teaching and Learning Enhancement Fund (TLEF) project at UBC. Participation
+is completely optional, but your feedback will help us make OCELIA even better.
+As a small thank-you, students who regularly engage with OCELIA throughout
+the term will earn a bonus 2% added to their final grade.
+To sign-up for OCELIA, please create an account at ocelia.arts.ubc.ca using
+your @student.ubc.ca email address. When you sign in, click the join button
+and use the following code to join our class instance: XXX-XXX-XXX-XXX Students’
+conversations and data will be saved by OCELIA and are accessible to instructors;
+however, such access will be limited to troubleshooting potential issues with the
+AI assistant.
+It should be fun, and will definitely make the coding part of the course easier. I encourage you
+to try it out!
+UBC Early Alert
+University students often encounter setbacks from time to time that can impact academic
+performance. If you run into diﬀiculties and need assistance, I encourage you to contact me
+by email or phone during my oﬀice hours, before or after class, or by dropping into my oﬀice
+(location). Iwilldomybesttosupportyoursuccessduringtheterm. Thisincludesidentifying
+concerns I may have about your academic progress or wellbeing through Early Alert. With
+Early Alert, faculty members can connect you with advisors who offer students support and
+assistance getting back on track to success. Only specialized UBC advisors are able to access
+any concerns I may identify, and Early Alert does not affect your academic record.
+• For more information, visit <earlyalert.ubc.ca.>
+• For information about addressing mental or physical health concerns, including seeing a
+UBC counsellor or doctor, visit <students.ubc.ca/livewell>
+Academic Accommodation for Students with Disabilities
+Academic accommodations help students with a disability or ongoing medical condition over-
+come challenges that may affect their academic success. Students requiring academic accom-
+modations must register with the Centre for Accessibility. The Centre will determine that
+student’s eligibility for accommodations in accordance with Policy 73: Academic Accommo-
+dation for Students with Disabilities. Academic accommodations are not determined by your
+instructors, and instructors should not ask you about the nature of your disability or ongoing
+18
+medical condition, or request copies of your disability documentation. However, your instruc-
+tor may consult with Access and Diversity should the accommodations affect the essential
+learning outcomes of a course.
+Conflicting Responsibilities
+UBC recognizes that students may occasionally have conflicting responsibilities that affect
+their ability to attend class or examinations. These may include: representing the University,
+the province or the country in a competition or performance; serving in the Canadian military;
+or observing a religious rite. They may also include a change in a student’s situation that
+unexpectedly requires that student to work or take responsibility for the care of a family
+member, if these were not pre-existing situations at the start of term.
+Students with conflicting responsibilities have a duty to arrange their course schedules so as
+to avoid, as much as possible, any conflicts with course requirements. As soon as conflicting
+responsibilities arise, students must notify either their instructor(s) or their Faculty Advising
+Oﬀice (e.g. Arts Academic Advising), and can request academic concession. Instructors may
+not be able to comply with all such requests if the academic standards and integrity of the
+course or program would be compromised.
+Varsity student-athletes should discuss any anticipated and unavoidable regular-season ab-
+sences with the instructor at the start of term, and provide notice of playoff or championship
+absences in writing as soon as dates are confirmed.
+Religious observance may preclude attending classes or examinations at certain times. In
+accordancewiththeUBCPolicyonReligiousHolidays,studentswhowishtobeaccommodated
+for religious reasons must notify their instructors in writing at least two weeks in advance.
+Instructors will provide an opportunity for such students to make up work or examinations
+missed without penalty
+Copyright Notice
+All lectures, assignments, exams, activities and course materials are copyright © Jonathan
+L. Graves 2025, unless specifically noted. Please don’t post them online without my express,
+written permission!
+19
+Appendices
+Project
+Papers are graded on a 5 point scale for each part
+• 0 = not present or does not meet required standards
+• 1 = does not meet required standard
+• 2 = marginally meets required standard
+• 3 = meets required standard
+• 4 = meets or exceeds required standard
+• 5 = exceeds required standard
+A 3-4 is “good” while a “4-5” is “excellent” in general.
+• The points are then combined according to the listed weights, and then considered as a
+whole.
+• Because the final consideration is for the paper as a whole, the final grade may not
+exactly track the weighted average of the points for each section. For instance, a 4.1
+might be a “good” or an “excellent” depending on the paper as a whole.
+Part Description Weight
+Background
+Research Is there a clearly stated hypothesis? Is the hypothesis precise enough 5%
+question and to answer empirically?
+hypothesis
+Motivation and Does the student explain the background in the area? Is the research 5%
+background question well-motivated?
+Data and
+Methods
+Data Is the data chosen appropriate? Is the source and type of data 5%
+identification well-described?
+and explanation
+Summary Is there a clearly written table of summary statistics? Is it described 5%
+statistics well?
+20
+Part Description Weight
+Methodology Is the method chosen to answer the question appropriate? Is it 5%
+selection explained well and clearly motivated?
+Identification Does the student understand the required assumptions? Are they 10%
+and causal discussed well?
+assessment
+Specification Is the specification explained? Is it well-described? Is there an 5%
+selection(s) equation?
+Results
+Table of results Is there a clearly labelled table of results? Is it well-produced? Is it 5%
+interpreted properly?
+Interpretation of Are the results explained in the context of the research question? Is 10%
+results the explanation correct?
+Discussion
+Analysis of Does the student explain the results in the context of the method 10%
+results chosen? Are the strengths and weakness address? Are alternative
+explanations address?
+Quality of Is the student’s extension or additional analysis well-executed? Is it 10%
+extension analyzed well? Is it motivated or connected to the research question?
+Overall
+References Is the paper properly cited? Are there suﬀicient references? Is there 10%
+a table of citations?
+Professionalism Is the paper professionally produced? Is it well-formatted? Are there 10%
+typographical or formatting errors?
+Grammar and Is the paper grammatically correct? Are there minimal spelling 5%
+spelling errors? Is it clearly written?
+Total 100%
+You can see Canvas for the final rubric; this is just an example, but it will be very similar.
+Rough Formatting and length guidelines:
+• The font selected should be Times New Roman 11 point font.
+• Pages should be formatted at standard margins (2.54 cm on all sides) and double spaced.
+• Pages should be numbered clearly
+• All papers should include a cover page, with the student’s name, student number, course
+title, and date.
+• Papers can vary in length; most will probably be 12 pages in length, but there is no firm
+upper or lower bound on paper length.
+21
+Assessment-level Learning Outcomes
+Learning Outcome C1:
+• C1.1 Describe cause and effect in economic and philosophical terms
+• C1.2 Compare causation and correlation in applied situations
+• C1.3 Construct examples of causation and correlation
+• C1.4 Describe an idealized experiment including the roles of treatment and control
+• C1.5 Explain the fundamentals of quasi-experimental framework
+• C1.6 Apply the quasi-experimental framework to applied situations
+Learning Outcome C2:
+• C2.1 Compare idealized experiments to their real-world quasi-experimental counterparts
+• C2.2Explaingeneralizedempiricalcomparisonmethodsinthequasi-experimentalframe-
+work
+• C2.2 Describe selection bias in applied situations
+• C2.3 Analyze comparison methods for potential selection bias
+Learning Outcome C3:
+• C3.1 Define linear regression, both simple and multiple
+• C3.2 Explain the relationship between linear regression and comparison methods
+• C3.3 Analyze linear regression methods in terms of the quasi-experimental framework
+• C3.6 Explain difference-in-difference models and their key assumptions
+• C3.7 Apply difference-in-difference models to the quasi-experimental framework
+• C3.8 Explain regression discontinuity (or other advanced) models and their key assump-
+tions
+• C3.9Applyregressiondiscontinuitymodel(orotheradvanced)tothequasi-experimental
+framework
+• C3.10 Explain event study models (or other advanced) and their key assumptions
+• C3.11 Apply event study (or other advanced) models to the quasi-experimental frame-
+work
+Learning Outcome C4:
+• C4.1 Describe structure in economics and the relationship between theoretical and em-
+pirical models
+• C4.2 Determine the level of structure implicit in an empirical model
+• C4.3 Define an empirical model and contrast with an empirical specification
+• C4.4 Assess the quality of an empirical model for a specific situation
+Learning Outcome A1:
+• A1.1 Explain the different types of data and datasets used in economics
+22
+• A1.2 Describe the formulation of a proper research question
+• A1.3 Collect and manipulate data appropriate to answering a research question
+Learning Outcome A2:
+• A2.1 Design an empirical model to answer a research question
+• A2.2 Employ an empirical model to answer a research question in quantitative terms
+Learning Outcome A3:
+• A3.1 Interpret the results of an empirical model in the context of the research question
+• A3.2 Critique an empirical model in the context of answering a research question
+• A3.3Communicatetheresultsofanempiricalmodelinthecontextofaresearchquestion
+23
+

@@ -1,0 +1,69 @@
+{
+  "course_code": "ECON 398",
+  "events": [
+    {
+      "title": "Assignment 1",
+      "date": "Module 2",
+      "time": null,
+      "weight": 0.05,
+      "effort_hours": 8,
+      "type": "Assignment"
+    },
+    {
+      "title": "Assignment 2",
+      "date": "Module 3",
+      "time": null,
+      "weight": 0.05,
+      "effort_hours": 8,
+      "type": "Assignment"
+    },
+    {
+      "title": "Midterm Exam",
+      "date": "Week 6 or 7",
+      "time": null,
+      "weight": 0.2,
+      "effort_hours": 15,
+      "type": "Exam"
+    },
+    {
+      "title": "Assignment 3",
+      "date": "Module 4",
+      "time": null,
+      "weight": 0.05,
+      "effort_hours": 8,
+      "type": "Assignment"
+    },
+    {
+      "title": "Assignment 4",
+      "date": "Module 5",
+      "time": null,
+      "weight": 0.05,
+      "effort_hours": 8,
+      "type": "Assignment"
+    },
+    {
+      "title": "Assignment 5",
+      "date": "Module 6",
+      "time": null,
+      "weight": 0.05,
+      "effort_hours": 8,
+      "type": "Assignment"
+    },
+    {
+      "title": "Final Research Report",
+      "date": "Post-Class",
+      "time": null,
+      "weight": 0.05,
+      "effort_hours": 40,
+      "type": "Project"
+    },
+    {
+      "title": "Final Exam",
+      "date": "Post-Class",
+      "time": null,
+      "weight": 0.5,
+      "effort_hours": 25,
+      "type": "Exam"
+    }
+  ]
+}
