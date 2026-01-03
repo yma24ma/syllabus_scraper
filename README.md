@@ -2,78 +2,45 @@
 
 **AI-Powered Schedule Extraction for Students**
 
-Syllabus Scraper is a futuristic, AI-driven web application that automatically extracts course schedules, deadlines, and grade weightings from PDF syllabi. Built with Streamlit and powered by Google's Gemini models, it transforms unstructured course documents into actionable data, helping students optimize their workload and never miss a deadline.
+Syllabus Scraper is your personal AI academic assistant. It takes your messy, unstructured PDF course syllabi and instantly transforms them into a clean, organized schedule and workload analysis. Stop manually typing dates into your calendar—let AI do it for you.
 
-## ✨ Features
+## 📖 How to Use
 
--   **📄 AI PDF Parsing**: Upload any course syllabus (PDF), and the AI automatically detects and extracts event titles, dates, times, and assignment types.
--   **🤖 Intelligent Analysis**:
-    -   **Leverage Score**: Calculates "Grade % per Hour of Work" to help you prioritize high-value tasks.
-    -   **Workload Distribution**: Visualizes your semester's pressure points with an interactive bar chart.
--   **📅 Google Calendar Integration**: One-click "Add to Cal" links for every extracted event.
--   **💎 Futuristic UI**: A stunning glassmorphism design with neon accents and smooth animations.
--   **📊 Export Ready**: Download your parsed schedule as a CSV file for use in Excel or Notion.
+Using Syllabus Scraper is simple and takes seconds:
 
-## 🚀 Getting Started
+### 1. Upload Your Syllabus
+Simply drag and drop your course syllabus (PDF format) into the "Choose a PDF file" uploader.
 
-### Prerequisites
+### 2. Instant Analysis
+The AI immediately scans the document to identify:
+*   **Key Dates:** Exams, assignments, quizzes, and project deadlines.
+*   **Weights:** How much each item helps your final grade.
+*   **Effort Estimates:** AI-predicted time required for each task.
 
--   Python 3.8+
--   A generic API Key from Google AI Studio (Gemini)
+### 3. Plan Your Semester
+Once scanned, you get a dashboard of "Course Intelligence":
+*   **Leverage Score:** See which assignments give you the most grade points for the least effort.
+*   **Add to Calendar:** Click the **📅 Add** button next to any event to instantly open Google Calendar with the event pre-filled.
+*   **Workload Chart:** View a bar chart showing your busiest weeks ("Pressure Points") so you can plan ahead.
 
-### Installation
+### 4. Export
+Need the data elsewhere? Click **Download as CSV** to get a spreadsheet ready for Excel, Notion, or Sheets.
 
-1.  **Clone the repository**
-    ```bash
-    git clone https://github.com/yourusername/syllabus-scraper.git
-    cd syllabus-scraper
-    ```
+---
 
-2.  **Create a virtual environment (Optional but Recommended)**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
+## ✨ Key Features
 
-3.  **Install dependencies**
-    ```bash
-    pip install -r requirements.txt
-    ```
+*   **Glassmorphism UI**: A beautiful, modern interface that makes planning feel futuristic.
+*   **Smart Parsing**: Understands fuzzy dates like "Week 5" or "Final Exam Period".
+*   **Privacy Focused**: Your data is processed securely.
 
-4.  **Set up Environment Variables**
-    Create a `.env` file in the root directory and add your Gemini API key:
-    ```bash
-    GEMINI_API_KEY="your_api_key_here"
-    ```
+---
 
-### Running the App
+## 💻 For Developers (Running Locally)
 
-Run the Streamlit application locally:
-```bash
-streamlit run app.py
-```
-Open your browser to `http://localhost:8501` to start scraping!
+If you want to run this code on your own machine:
 
-## 🛠️ Tech Stack
-
--   **Frontend**: [Streamlit](https://streamlit.io/)
--   **AI/LLM**: Google Gemini (via `google-generativeai`)
--   **Data Processing**: Pandas
--   **Parsing**: PDF text extraction & Regex
-
-## ☁️ Deployment
-
-This app is optimized for **Streamlit Community Cloud**.
-
-1.  Push your code to GitHub.
-2.  Sign in to [share.streamlit.io](https://share.streamlit.io/).
-3.  Deploy the app from your repository.
-4.  **Important**: Add your `GEMINI_API_KEY` in the Streamlit Cloud "Secrets" settings.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+1.  Clone this repo.
+2.  Install requirements: `pip install -r requirements.txt`
+3.  Set your `GEMINI_API_KEY` in a `.env` file.
+4.  Run: `streamlit run app.py`
