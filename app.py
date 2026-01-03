@@ -109,7 +109,7 @@ with col2:
     )
 
 st.title("SYLLABUS SCRAPER")
-st.markdown("<p style='text-align: center; color: #888; margin-bottom: 2rem;'>AI-POWERED SCHEDULE EXTRACTION (v2.0)</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #888; margin-bottom: 2rem;'>AI-POWERED SCHEDULE EXTRACTION (v2.1)</p>", unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
 
@@ -170,14 +170,14 @@ if uploaded_file is not None:
                 # Ensure numeric and handle missing weights
                 df["weight_val"] = pd.to_numeric(df["weight"], errors='coerce').fillna(0)
                 
-                # Effort = Weight * 80 hours
-                df["effort_hours"] = df["weight_val"] * 80
+                # Effort = (Weight / 100) * 80 hours
+                df["effort_hours"] = (df["weight_val"] / 100) * 80
                 df["effort_val"] = df["effort_hours"] # Alias for consistency with display logic below
                 
                 # Leverage Calculation
-                # Note: With fixed relationship (Effort = Weight * 80), Leverage becomes constant (1.25 %/hr).
-                # We keep the logic in case manual overrides are added later or for consistency.
-                df["Leverage"] = (df["weight_val"] * 100) / df["effort_val"].replace(0, 1) # Avoid div by zero
+                # Leverage = Grade % / Effort Hours
+                # weight_val is already in % (e.g. 20 for 20%)
+                df["Leverage"] = df["weight_val"] / df["effort_val"].replace(0, 1) # Avoid div by zero
                 
                 # ---------------------------------------------------------
                 # GOOGLE CALENDAR LINKS (Web Intent)
