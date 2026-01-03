@@ -26,6 +26,26 @@ Once scanned, you get a dashboard of "Course Intelligence":
 ### 4. Export
 Need the data elsewhere? Click **Download as CSV** to get a spreadsheet ready for Excel, Notion, or Sheets.
 
+## 🧠 How Calculations Work
+
+### 1. Effort Estimates (AI)
+The AI estimates the "Effort Hours" for each task based on general student heuristics:
+*   **Quiz:** ~2 hours
+*   **Assignment:** ~5-10 hours
+*   **Midterm:** ~15-20 hours
+*   **Final Exam:** ~20-30 hours
+*   **Project:** ~40 hours
+
+### 2. Leverage Score (ROI)
+We calculate the "Return on Investment" for your time using this formula:
+
+$$
+\text{Leverage} = \frac{\text{Weight (Percentage)} \times 100}{\text{Effort Hours}}
+$$
+
+*   **High Leverage (>2.0):** High grade reward for little work (e.g., a simple 5% quiz taking 1 hour).
+*   **Low Leverage (<0.5):** Lots of work for little grade (e.g., a massive 10% project taking 50 hours).
+
 ---
 
 ## ✨ Key Features
