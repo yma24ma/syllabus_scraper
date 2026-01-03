@@ -165,14 +165,19 @@ if uploaded_file is not None:
                 events_data = result.get("events", [])
                 
                 # Update DataFrame with new columns
-                if "effort_hours" not in df.columns:
-                     df["effort_hours"] = 5 # Default fallback
+                # Calculate Effort based on Weight (Total Semester Load = 80 hours)
                 
-                # Ensure numeric
+                # Ensure numeric and handle missing weights
                 df["weight_val"] = df["weight"].fillna(0) # Keep raw 0.xx for math
-                df["effort_val"] = pd.to_numeric(df["effort_hours"], errors='coerce').fillna(5)
                 
-                df["Leverage"] = (df["weight_val"] * 100) / df["effort_val"]
+                # Effort = Weight * 80 hours
+                df["effort_hours"] = df["weight_val"] * 80
+                df["effort_val"] = df["effort_hours"] # Alias for consistency with display logic below
+                
+                # Leverage Calculation
+                # Note: With fixed relationship (Effort = Weight * 80), Leverage becomes constant (1.25 %/hr).
+                # We keep the logic in case manual overrides are added later or for consistency.
+                df["Leverage"] = (df["weight_val"] * 100) / df["effort_val"].replace(0, 1) # Avoid div by zero
                 
                 # ---------------------------------------------------------
                 # GOOGLE CALENDAR LINKS (Web Intent)
@@ -237,7 +242,7 @@ if uploaded_file is not None:
                             "Weight (%)",
                             format="%.1f%%"
                         ), 
-                        "effort_hours": st.column_config.NumberColumn("Wait (Hrs)"),
+                        "effort_hours": st.column_config.NumberColumn("Work (Hrs)"),
                         "Leverage": st.column_config.ProgressColumn(
                             "Leverage Score",
                             help="Grade % earned per hour of work",

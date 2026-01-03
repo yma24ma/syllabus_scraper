@@ -54,11 +54,6 @@ def parse_syllabus(text):
     - If it says "Week 6", return "Week 6".
     - If it says "End of Term", return "End of Term".
     - ONLY return null if there is absolutely no mention of timing.
-    
-    CRITICAL INSTRUCTION - EFFORT:
-    - Estimate the "effort_hours" required for an average student.
-    - Heuristics: Assignment ~5-10h, Midterm ~15-20h, Final ~20-30h, Project ~40h, Quiz ~2h.
-    - Return as a number (integer).
 
     Return ONLY valid JSON in the following format (do not include markdown code blocks):
     {
@@ -69,7 +64,6 @@ def parse_syllabus(text):
           "date": "YYYY-MM-DD or String (e.g. 'Week 5')",
           "time": "HH:MM (24hr) or null",
           "weight": 0.XX,
-          "effort_hours": 5,
           "type": "Exam/Assignment/Other"
         }
       ]
