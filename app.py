@@ -109,7 +109,7 @@ with col2:
     )
 
 st.title("SYLLABUS SCRAPER")
-st.markdown("<p style='text-align: center; color: #888; margin-bottom: 2rem;'>AI-POWERED SCHEDULE EXTRACTION (v2.1)</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #888; margin-bottom: 2rem;'>AI-POWERED SCHEDULE EXTRACTION (v2.2)</p>", unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
 
@@ -174,10 +174,23 @@ if uploaded_file is not None:
                 df["effort_hours"] = (df["weight_val"] / 100) * 80
                 df["effort_val"] = df["effort_hours"] # Alias for consistency with display logic below
                 
-                # Leverage Calculation
-                # Leverage = Grade % / Effort Hours
-                # weight_val is already in % (e.g. 20 for 20%)
-                df["Leverage"] = df["weight_val"] / df["effort_val"].replace(0, 1) # Avoid div by zero
+                # Leverage Calculation (Option 3: Format Multiplier)
+                # Formula: Leverage = Weight * Multiplier
+                # Multipliers: Exam=1.5, Quiz=1.2, Assignment=1.0, Project=0.8
+                
+                def get_multiplier(type_str):
+                    t = str(type_str).lower()
+                    if "exam" in t or "midterm" in t or "final" in t:
+                        return 1.5
+                    elif "quiz" in t or "test" in t:
+                        return 1.2
+                    elif "project" in t or "presentation" in t:
+                        return 0.8
+                    else:
+                        return 1.0
+                
+                df["multiplier"] = df["type"].apply(get_multiplier)
+                df["Leverage"] = df["weight_val"] * df["multiplier"]
                 
                 # ---------------------------------------------------------
                 # GOOGLE CALENDAR LINKS (Web Intent)

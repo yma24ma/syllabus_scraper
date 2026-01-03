@@ -64,7 +64,8 @@ def parse_syllabus(text):
           "date": "YYYY-MM-DD or String (e.g. 'Week 5')",
           "time": "HH:MM (24hr) or null",
           "weight": 0.XX,
-          "type": "Exam/Assignment/Other"
+          "weight": 0.XX,
+          "type": "Exam|Quiz|Assignment|Project|Other"
         }
       ]
     }
