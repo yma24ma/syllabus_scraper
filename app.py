@@ -109,7 +109,7 @@ with col2:
     )
 
 st.title("SYLLABUS SCRAPER")
-st.markdown("<p style='text-align: center; color: #888; margin-bottom: 2rem;'>AI-POWERED SCHEDULE EXTRACTION</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #888; margin-bottom: 2rem;'>AI-POWERED SCHEDULE EXTRACTION (v2.0)</p>", unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
 
@@ -168,7 +168,7 @@ if uploaded_file is not None:
                 # Calculate Effort based on Weight (Total Semester Load = 80 hours)
                 
                 # Ensure numeric and handle missing weights
-                df["weight_val"] = df["weight"].fillna(0) # Keep raw 0.xx for math
+                df["weight_val"] = pd.to_numeric(df["weight"], errors='coerce').fillna(0)
                 
                 # Effort = Weight * 80 hours
                 df["effort_hours"] = df["weight_val"] * 80
